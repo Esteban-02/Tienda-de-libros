@@ -1,6 +1,5 @@
 package gm.tienda_libros.vista;
 
-import gm.tienda_libros.modelo.Libro;
 import gm.tienda_libros.servicio.LibroServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -14,13 +13,22 @@ public class LibroForm extends JFrame {
     LibroServicio libroServicio;
     private JPanel panel;
     private JTable tablaLibros;
+    private JTextField libroTexto;
+    private JTextField autorTexto;
+    private JTextField precioTexto;
+    private JTextField existenciasTexto;
+    private JButton agregarButton;
+    private JButton modificarButton;
+    private JButton eliminarButton;
     private DefaultTableModel tablaModeloLibros;
 
     @Autowired
     public LibroForm(LibroServicio libroServicio){
         this.libroServicio = libroServicio;
         iniciarForma();
+        agregarButton.addActionListener(e -> {
 
+        });
     }
 
     /**
